@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuber Crops and Diseases</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style1.css') }}">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="/home">Home</a>
+        </nav>
+        <a href="#" class="logo"><i class="fas fa-seedling"></i> Plant Health Directory</a>
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+        </div>
+        <form action="#categories" class="search-form">
+            <input type="search" id="search-box" placeholder="Search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <div class="container">
+        <h1>Tuber Crops and Diseases</h1>
+        
+        <div class="crop-matrix">
+            <!-- Potato -->
+            <div class="crop-section">
+                <img src="../static/images/tuber/potato.jpg" alt="Potato">
+                <div class="crop-details">
+                    <h2>Potato</h2>
+                    <p>
+                        Potato is susceptible to diseases including:
+                        <ul>
+                            <li><strong>Late Blight</strong>: Water-soaked lesions on leaves and stems.</li>
+                            <li><strong>Early Blight</strong>: Dark, concentric lesions on leaves.</li>
+                            <li><strong>Common Scab</strong>: Rough, corky patches on tubers.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        To manage these diseases, consider:
+                        <ul>
+                            <li>Using certified disease-free seed potatoes.</li>
+                            <li>Applying fungicides preventively during wet weather.</li>
+                            <li>Practicing crop rotation with non-host crops.</li>
+                            <li>Ensuring proper soil drainage and ventilation.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sweet Potato -->
+            <div class="crop-section">
+                <img src="../static/images/tuber/sweet_potato.jpg" alt="Sweet Potato">
+                <div class="crop-details">
+                    <h2>Sweet Potato</h2>
+                    <p>
+                        Sweet potato can suffer from diseases such as:
+                        <ul>
+                            <li><strong>Black Rot</strong>: Blackened stem and decayed roots.</li>
+                            <li><strong>Stem Rot</strong>: Rotting of stem and wilted leaves.</li>
+                            <li><strong>Fungal Leaf Spot</strong>: Brown spots with yellow halos on leaves.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Effective control methods include:
+                        <ul>
+                            <li>Planting disease-resistant sweet potato varieties.</li>
+                            <li>Practicing crop rotation with non-related crops.</li>
+                            <li>Managing soil moisture to prevent waterlogging.</li>
+                            <li>Applying fungicides as per recommended schedules.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Cassava -->
+            <div class="crop-section">
+                <img src="../static/images/tuber/cassava.jpg" alt="Cassava">
+                <div class="crop-details">
+                    <h2>Cassava</h2>
+                    <p>
+                        Cassava is vulnerable to diseases such as:
+                        <ul>
+                            <li><strong>Cassava Mosaic Disease</strong>: Yellow mottling and distortion of leaves.</li>
+                            <li><strong>Cassava Bacterial Blight</strong>: Water-soaked lesions on leaves and stems.</li>
+                            <li><strong>Cassava Brown Streak Disease</strong>: Brown streaks on stems and leaves.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Strategies to manage these diseases include:
+                        <ul>
+                            <li>Planting disease-free stem cuttings.</li>
+                            <li>Using resistant cassava varieties.</li>
+                            <li>Practicing good field sanitation.</li>
+                            <li>Applying appropriate pesticides or biocontrol agents.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Yam -->
+            <div class="crop-section">
+                <img src="../static/images/tuber/yam.jpg" alt="Yam">
+                <div class="crop-details">
+                    <h2>Yam</h2>
+                    <p>
+                        Yam can be affected by diseases such as:
+                        <ul>
+                            <li><strong>Yam Anthracnose</strong>: Sunken lesions on tubers and stems.</li>
+                            <li><strong>Yam Rot</strong>: Soft, rotting areas on tubers.</li>
+                            <li><strong>Yam Scab</strong>: Rough, corky patches on tubers.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Methods to manage these diseases include:
+                        <ul>
+                            <li>Planting disease-resistant yam varieties.</li>
+                            <li>Practicing crop rotation with non-related crops.</li>
+                            <li>Applying fungicides during critical growth stages.</li>
+                            <li>Ensuring proper soil drainage and ventilation.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Taro -->
+            <div class="crop-section">
+                <img src="../static/images/tuber/taro.jpg" alt="Taro">
+                <div class="crop-details">
+                    <h2>Taro</h2>
+                    <p>
+                        Taro can suffer from diseases such as:
+                        <ul>
+                            <li><strong>Taro Leaf Blight</strong>: Large, water-soaked lesions on leaves.</li>
+                            <li><strong>Taro Root Rot</strong>: Rotting of roots, leading to plant wilting.</li>
+                            <li><strong>Phytophthora Leaf Spot</strong>: Brown spots with yellow halos on leaves.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Effective management practices include:
+                        <ul>
+                            <li>Planting disease-free corms.</li>
+                            <li>Practicing crop rotation with non-related crops.</li>
+                            <li>Applying fungicides or biocontrol agents as recommended.</li>
+                            <li>Monitoring field conditions and irrigation practices.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Jerusalem Artichoke -->
+            <div class="crop-section">
+                <img src="../static/images/tuber/jerusalem_artichoke.jpg" alt="Jerusalem Artichoke">
+                <div class="crop-details">
+                    <h2>Jerusalem Artichoke</h2>
+                    <p>
+                        Jerusalem artichoke is prone to diseases such as:
+                        <ul>
+                            <li><strong>White Mold</strong>: White, fluffy mold on stems and leaves.</li>
+                            <li><strong>Sclerotinia Rot</strong>: Soft, watery lesions on tubers.</li>
+                            <li><strong>Leaf Blight</strong>: Dark spots on leaves, leading to defoliation.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Strategies to manage these diseases include:
+                        <ul>
+                            <li>Planting disease-resistant varieties.</li>
+                            <li>Practicing crop rotation with non-related crops.</li>
+                            <li>Monitoring and managing irrigation to avoid water stress.</li>
+                            <li>Applying fungicides during periods of high humidity.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+        </div> <!-- End of crop-matrix -->
+
+    </div> <!-- End of container -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

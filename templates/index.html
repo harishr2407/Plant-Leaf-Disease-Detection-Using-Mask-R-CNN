@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Leaf Disease Detection</title>
+    <!--Swiper files in your project, you may use it from CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-seedling"></i> Plant Health Directory</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about-us">about us</a>
+            <a href="#categories">categories</a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+        <form action="#categories" class="search-form">
+            <input type="search" id="search-box" placeholder="search hear.....">
+            <label for="search-box" class="fas fa-search"></label>
+
+        </form>
+        
+        
+    </header>
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Empowering Agriculture Through <span>AI-Powered</span> Plant Health Analysis. </h3>
+            <p>Harnessing the art of leaf scanning for precision plant health.</p>
+            <div class="container">
+                <form action="/" method="post" enctype="multipart/form-data">
+                    <input  type="file" name="file" accept="image/*">
+                    <br>
+                    <button type="submit">Analyse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <section class="categories" id="categories">
+        <h1 class="heading">Our<span> Categories</span></h1>
+        <div class="box-cotainer">
+            <div class="box">
+                <img src="../static/images/1720496231290efy0hkzi.jpg" alt="">
+                <h3>Cereal Crops</h3>
+                <p>Wheat, rice, corn, barley, oats, sorghum, millet</p>
+                <a href="/cereal"  class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="../static/images/1720496455786s621velu.jpg" alt="">
+                <h3>Pulse Crops</h3>
+                <p>Beans, lentils, chickpeas, peas, soybeans</p>
+                <a href="/pulse" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="../static/images/17204964688941yhztjnk.jpg" alt="">
+                <h3>Oilseed Crops</h3>
+                <p>Soybean, sunflower, sesame, flaxseed, cottonseed</p>
+                <a href="/oil" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="../static/images/1720496698086lollx4c0.jpg" alt="">
+                <h3>Fiber Crops</h3>
+                <p>Cotton, hemp, flax, jute, sisal</p>
+                <a href="/fiber" class="btn">read more</a>
+            </div>
+            
+            <div class="box">
+                <img src="../static/images/17204968154038ly4aix2.jpg" alt="">
+                <h3>Fruit Crops</h3>
+                <p>Apples, oranges, bananas, grapes, mangoes</p>
+                <a href="/fruit" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="../static/images/veg.jpg" alt="">
+                <h3>Vegetable Crops</h3>
+                <p>Tomatoes, potatoes, carrots, spinach, onions</p>
+                <a href="/veg" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="../static/images/17205398590227sy5j0oq.jpg" alt="">
+                <h3>Root/Tuber Crops</h3>
+                <p>Cassava, sweet potato, yams, beets, carrots</p>
+                <a href="/root" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="../static/images/17205411075729nlseho5.jpg" alt="">
+                <h3>Flower Crops</h3>
+                <p></p>
+                <a href="/flower" class="btn">read more</a>
+            </div>
+
+        </div>
+    </section>
+
+    </section>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3> Plant Health Directory<i class="fas fa-seedling"></i></h3>
+                <p> </p>
+                <div class="shere">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#" class="link"><i class="fas fa-phone"></i>+123-456-7890</a>
+                <a href="#" class="link"><i class="fas fa-phone"></i>+111-222-3333</a>
+                <a href="#" class="link"><i class="fas fa-envelope"></i>AK143@gmail.com</a>
+                <a href="#" class="link"><i class="fas fa-map-marked-alt"></i>Bengalore, india - 572102</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html" class="link"><i class="fas fa-arrow-right"></i>home</a>
+                <a href="#categories" class="link"><i class="fas fa-arrow-right"></i>categories</a>
+                <a href="#" class="link"><i class="fas fa-arrow-right"></i>about us</a>
+                <a href="#" class="link"><i class="fas fa-arrow-right"></i>review</a>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

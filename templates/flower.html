@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Crops and Diseases</title>
+    <!--Swiper files in your project, you may use it from CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style1.css') }}">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="/home">home</a>
+        </nav>
+        <a href="#" class="logo"><i class="fas fa-seedling"></i> Plant Health Directory</a>
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+        </div>
+        <form action="#categories" class="search-form">
+            <input type="search" id="search-box" placeholder="search here.....">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <div class="container">
+        <h1>Flower Crops and Diseases</h1>
+        
+        <div class="crop-matrix">
+            <!-- Rose -->
+            <div class="crop-section">
+                <img src="../static/images/flowers/rose.jpg" alt="Rose">
+                <div class="crop-details">
+                    <h2>Rose</h2>
+                    <p>
+                        Roses are susceptible to several diseases including:
+                        <ul>
+                            <li><strong>Black Spot</strong>: Black spots with yellow halos on leaves.</li>
+                            <li><strong>Powdery Mildew</strong>: White powdery fungal growth on leaves and stems.</li>
+                            <li><strong>Rust</strong>: Orange pustules on undersides of leaves.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        To control these diseases, consider:
+                        <ul>
+                            <li>Using resistant varieties of roses.</li>
+                            <li>Applying fungicides according to recommended schedules.</li>
+                            <li>Ensuring proper air circulation and sunlight exposure.</li>
+                            <li>Removing and destroying affected plant parts.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Marigold -->
+            <div class="crop-section">
+                <img src="../static/images/flowers/marigold.jpg" alt="Marigold">
+                <div class="crop-details">
+                    <h2>Marigold</h2>
+                    <p>
+                        Marigolds commonly face the following diseases:
+                        <ul>
+                            <li><strong>Alternaria Leaf Spot</strong>: Dark, concentric lesions on leaves.</li>
+                            <li><strong>Powdery Mildew</strong>: White, powdery fungal growth on leaves.</li>
+                            <li><strong>Root Rot</strong>: Wilting and rotting of roots caused by soil-borne fungi.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Effective control methods include:
+                        <ul>
+                            <li>Using disease-free seeds and soil.</li>
+                            <li>Applying fungicides preventively.</li>
+                            <li>Ensuring proper drainage to prevent waterlogging.</li>
+                            <li>Practicing crop rotation with non-host plants.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Jasmine -->
+            <div class="crop-section">
+                <img src="../static/images/flowers/jasmine.jpg" alt="Jasmine">
+                <div class="crop-details">
+                    <h2>Jasmine</h2>
+                    <p>
+                        Jasmine is vulnerable to various diseases, such as:
+                        <ul>
+                            <li><strong>Leaf Blight</strong>: Dark, irregular lesions on leaves.</li>
+                            <li><strong>Fusarium Wilt</strong>: Yellowing and wilting of leaves due to fungal infection.</li>
+                            <li><strong>Sooty Mold</strong>: Black, sooty growth on leaves and stems.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Recommended control strategies include:
+                        <ul>
+                            <li>Planting disease-resistant jasmine varieties.</li>
+                            <li>Applying fungicides during critical growth stages.</li>
+                            <li>Ensuring good air circulation around plants.</li>
+                            <li>Regularly cleaning leaves to remove mold.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Hibiscus -->
+            <div class="crop-section">
+                <img src="../static/images/flowers/hibiscus.jpg" alt="Hibiscus">
+                <div class="crop-details">
+                    <h2>Hibiscus</h2>
+                    <p>
+                        Hibiscus can suffer from diseases such as:
+                        <ul>
+                            <li><strong>Leaf Spot</strong>: Small, dark spots on leaves.</li>
+                            <li><strong>Root Rot</strong>: Wilting and yellowing of leaves caused by root infection.</li>
+                            <li><strong>Botrytis Blight</strong>: Gray mold on flowers and buds.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Effective management practices include:
+                        <ul>
+                            <li>Using disease-resistant hibiscus varieties.</li>
+                            <li>Applying fungicides at early stages of disease development.</li>
+                            <li>Ensuring proper soil drainage.</li>
+                            <li>Removing and destroying affected plant parts.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Chrysanthemum -->
+            <div class="crop-section">
+                <img src="../static/images/flowers/chrysanthemum.jpg" alt="Chrysanthemum">
+                <div class="crop-details">
+                    <h2>Chrysanthemum</h2>
+                    <p>
+                        Chrysanthemums are prone to diseases like:
+                        <ul>
+                            <li><strong>Leaf Spot</strong>: Brown spots with yellow halos on leaves.</li>
+                            <li><strong>Powdery Mildew</strong>: White powdery fungal growth on leaves and stems.</li>
+                            <li><strong>Rust</strong>: Orange pustules on leaves and stems.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Effective strategies include:
+                        <ul>
+                            <li>Using disease-resistant chrysanthemum varieties.</li>
+                            <li>Applying fungicides preventively during critical growth stages.</li>
+                            <li>Ensuring proper spacing for good air circulation.</li>
+                            <li>Removing and destroying infected plant debris.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Lotus -->
+            <div class="crop-section">
+                <img src="../static/images/flowers/lotus.jpg" alt="Lotus">
+                <div class="crop-details">
+                    <h2>Lotus</h2>
+                    <p>
+                        Lotus can be affected by diseases such as:
+                        <ul>
+                            <li><strong>Leaf Blight</strong>: Brown spots with yellow margins on leaves.</li>
+                            <li><strong>Root Rot</strong>: Wilting and yellowing of leaves due to root infection.</li>
+                            <li><strong>Anthracnose</strong>: Dark, sunken lesions on leaves and stems.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Strategies to manage these diseases include:
+                        <ul>
+                            <li>Choosing disease-resistant lotus varieties.</li>
+                            <li>Applying fungicides during wet periods.</li>
+                            <li>Ensuring proper water management to prevent waterlogging.</li>
+                            <li>Removing and destroying affected plant parts.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

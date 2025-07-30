@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oilseed Crops and Diseases</title>
+    <!-- Swiper files in your project, you may use it from CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Your custom CSS file -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style1.css') }}">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="/home">home</a>
+        </nav>
+        <a href="#" class="logo"><i class="fas fa-seedling"></i> Plant Health Directory</a>
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+        </div>
+        <form action="#categories" class="search-form">
+            <input type="search" id="search-box" placeholder="Search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <div class="container">
+        <h1>Oilseed Crops and Diseases</h1>
+        
+        <div class="crop-matrix">
+            <!-- Soybeans -->
+            <div class="crop-section">
+                <img src="../static/images/oilseed/soybeans.jpg" alt="Soybeans">
+                <div class="crop-details">
+                    <h2>Soybeans</h2>
+                    <p>
+                        Soybeans are susceptible to diseases such as:
+                        <ul>
+                            <li><strong>Soybean Rust</strong>: Orange to reddish-brown pustules on leaves, stems, and pods.</li>
+                            <li><strong>Sudden Death Syndrome</strong>: Sudden wilting and death of plants, often after flowering.</li>
+                            <li><strong>Phytophthora Root Rot</strong>: Brown lesions on roots leading to rotting and plant decline.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Effective strategies include:
+                        <ul>
+                            <li>Planting resistant soybean varieties.</li>
+                            <li>Using seed treatments to protect against early-season infections.</li>
+                            <li>Practicing crop rotation with non-host crops like corn or wheat.</li>
+                            <li>Applying fungicides and managing irrigation to reduce disease pressure.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Canola -->
+            <div class="crop-section">
+                <img src="../static/images/oilseed/canola.jpg" alt="Canola">
+                <div class="crop-details">
+                    <h2>Canola</h2>
+                    <p>
+                        Canola can suffer from diseases such as:
+                        <ul>
+                            <li><strong>Blackleg</strong>: Dark lesions on stems, causing plant collapse.</li>
+                            <li><strong>Sclerotinia Stem Rot</strong>: White, fluffy fungal growth on stems.</li>
+                            <li><strong>Alternaria Black Spot</strong>: Circular, dark spots on leaves.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Strategies to manage these diseases include:
+                        <ul>
+                            <li>Planting disease-resistant canola varieties.</li>
+                            <li>Practicing crop rotation and avoiding planting canola in consecutive years.</li>
+                            <li>Applying fungicides during flowering and pod formation.</li>
+                            <li>Monitoring and removing crop debris after harvest.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sunflower -->
+            <div class="crop-section">
+                <img src="../static/images/oilseed/sunflower.jpg" alt="Sunflower">
+                <div class="crop-details">
+                    <h2>Sunflower</h2>
+                    <p>
+                        Sunflowers are vulnerable to diseases such as:
+                        <ul>
+                            <li><strong>Downy Mildew</strong>: Grayish fungal growth on the undersides of leaves.</li>
+                            <li><strong>Rust</strong>: Pustules that start as small white or yellow spots and turn brown.</li>
+                            <li><strong>Phoma Black Stem</strong>: Black lesions on stems, often causing wilting.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Effective management practices include:
+                        <ul>
+                            <li>Planting disease-resistant sunflower hybrids.</li>
+                            <li>Applying fungicides during early growth stages.</li>
+                            <li>Implementing crop rotation with non-host crops.</li>
+                            <li>Monitoring fields regularly for early signs of disease.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Peanut -->
+            <div class="crop-section">
+                <img src="../static/images/oilseed/peanut.jpg" alt="Peanut">
+                <div class="crop-details">
+                    <h2>Peanut</h2>
+                    <p>
+                        Peanuts can be affected by diseases such as:
+                        <ul>
+                            <li><strong>Leaf Spot</strong>: Circular, dark lesions on leaves.</li>
+                            <li><strong>Early Leaf Spot</strong>: Small, dark spots that coalesce on leaves.</li>
+                            <li><strong>Tomato Spotted Wilt Virus</strong>: Yellowing and necrosis on leaves and stems.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Management strategies include:
+                        <ul>
+                            <li>Using disease-resistant peanut cultivars.</li>
+                            <li>Practicing crop rotation with non-host crops.</li>
+                            <li>Applying fungicides and maintaining proper irrigation.</li>
+                            <li>Monitoring for early symptoms and removing infected plants.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Flaxseed -->
+            <div class="crop-section">
+                <img src="../static/images/oilseed/flaxseed.jpg" alt="Flaxseed">
+                <div class="crop-details">
+                    <h2>Flaxseed</h2>
+                    <p>
+                        Flaxseed is susceptible to diseases such as:
+                        <ul>
+                            <li><strong>Powdery Mildew</strong>: White, powdery fungal growth on leaves and stems.</li>
+                            <li><strong>Rust</strong>: Orange pustules on leaves and stems.</li>
+                            <li><strong>Anthracnose</strong>: Dark, sunken lesions on stems and pods.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Effective management practices include:
+                        <ul>
+                            <li>Planting disease-resistant flaxseed varieties.</li>
+                            <li>Practicing crop rotation to reduce disease buildup.</li>
+                            <li>Applying fungicides during critical growth stages.</li>
+                            <li>Monitoring fields regularly for signs of disease.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sesame -->
+            <div class="crop-section">
+                <img src="../static/images/oilseed/sesame.jpg" alt="Sesame">
+                <div class="crop-details">
+                    <h2>Sesame</h2>
+                    <p>
+                        Sesame can encounter diseases such as:
+                        <ul>
+                            <li><strong>Phyllody</strong>: Abnormal growth and deformation of flowers.</li>
+                            <li><strong>Cercospora Leaf Spot</strong>: Circular, brown spots on leaves.</li>
+                            <li><strong>Fusarium Wilt</strong>: Wilting and vascular discoloration.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Strategies for disease management include:
+                        <ul>
+                            <li>Using disease-resistant sesame varieties.</li>
+                            <li>Practicing crop rotation with non-host crops.</li>
+                            <li>Applying fungicides preventively.</li>
+                            <li>Monitoring and removing infected plants promptly.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Add more sections for other oilseed crops as needed -->
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

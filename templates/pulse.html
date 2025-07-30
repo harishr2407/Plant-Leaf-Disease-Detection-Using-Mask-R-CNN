@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Leaf Disease Detection</title>
+    <!--Swiper files in your project, you may use it from CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style1.css') }}">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="/home">home</a>
+        </nav>
+        <a href="#" class="logo"><i class="fas fa-seedling"></i> Plant Health Directory</a>
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+        </div>
+        <form action="#crop-matrix" class="search-form">
+            <input type="search" id="search-box" placeholder="search hear.....">
+            <label for="search-box" class="fas fa-search"></label>
+
+        </form>
+        
+        
+    </header>
+    
+    <div class="container">
+        <h1>Pulse Crops and Diseases</h1>
+        
+        <div class="crop-matrix">
+            <!-- Lentils -->
+            <div class="crop-section">
+                <img src="../static/images/pulse/lentil.jpg" alt="Lentils">
+                <div class="crop-details">
+                    <h2>Lentils</h2>
+                    <p>
+                        Lentils are susceptible to diseases including:
+                        <ul>
+                            <li><strong>Anthracnose</strong>: Dark, sunken lesions on stems, leaves, and pods.</li>
+                            <li><strong>Ascochyta Blight</strong>: Small, circular lesions with gray centers on leaves.</li>
+                            <li><strong>Rust</strong>: Reddish-brown pustules on leaves and stems.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        To manage these diseases, consider:
+                        <ul>
+                            <li>Planting disease-resistant lentil varieties.</li>
+                            <li>Applying fungicides preventively during periods of high humidity.</li>
+                            <li>Practicing crop rotation to reduce disease pressure.</li>
+                            <li>Removing and destroying crop debris after harvest.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Chickpeas -->
+            <div class="crop-section">
+                <img src="../static/images/pulse/chickpea.jpg" alt="Chickpeas">
+                <div class="crop-details">
+                    <h2>Chickpeas</h2>
+                    <p>
+                        Chickpeas commonly suffer from diseases such as:
+                        <ul>
+                            <li><strong>Ascochyta Blight</strong>: Dark, irregular spots on leaves and stems.</li>
+                            <li><strong>Botrytis Gray Mold</strong>: Grayish-brown mold on pods and stems.</li>
+                            <li><strong>Fusarium Wilt</strong>: Yellowing and wilting of leaves due to fungal infection.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Effective control methods include:
+                        <ul>
+                            <li>Using disease-resistant chickpea cultivars.</li>
+                            <li>Applying fungicides during flowering and pod development.</li>
+                            <li>Practicing crop rotation with non-host crops.</li>
+                            <li>Managing irrigation to avoid water stress.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Peas -->
+            <div class="crop-section">
+                <img src="../static/images/pulse/peas.jpg" alt="Peas">
+                <div class="crop-details">
+                    <h2>Peas</h2>
+                    <p>
+                        Peas are vulnerable to diseases such as:
+                        <ul>
+                            <li><strong>Powdery Mildew</strong>: White, powdery growth on leaves and stems.</li>
+                            <li><strong>Downy Mildew</strong>: Grayish mold on the undersides of leaves.</li>
+                            <li><strong>Pea Wilt</strong>: Wilting and yellowing of leaves due to bacterial infection.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Strategies to manage these diseases include:
+                        <ul>
+                            <li>Choosing resistant pea varieties.</li>
+                            <li>Practicing crop rotation with non-legume crops.</li>
+                            <li>Applying fungicides preventively in humid conditions.</li>
+                            <li>Improving air circulation and reducing plant density.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Beans -->
+            <div class="crop-section">
+                <img src="../static/images/pulse/beans.jpg" alt="Beans">
+                <div class="crop-details">
+                    <h2>Beans</h2>
+                    <p>
+                        Beans can suffer from diseases such as:
+                        <ul>
+                            <li><strong>Angular Leaf Spot</strong>: Angular lesions with a water-soaked appearance on leaves.</li>
+                            <li><strong>Rust</strong>: Reddish-brown spores on leaves and stems.</li>
+                            <li><strong>Common Blight</strong>: Dark, sunken lesions on leaves and pods.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Effective management strategies include:
+                        <ul>
+                            <li>Planting disease-resistant bean varieties.</li>
+                            <li>Practicing crop rotation and avoiding planting beans in wet fields.</li>
+                            <li>Applying fungicides during flowering and pod development.</li>
+                            <li>Removing and destroying infected plant debris.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <!-- Soybeans -->
+            <div class="crop-section">
+                <img src="../static/images/pulse/soybeans.jpg" alt="Soybeans">
+                <div class="crop-details">
+                    <h2>Soybeans</h2>
+                    <p>
+                        Soybeans are susceptible to diseases such as:
+                        <ul>
+                            <li><strong>Soybean Rust</strong>: Orange to reddish-brown pustules on leaves, stems, and pods.</li>
+                            <li><strong>Sudden Death Syndrome</strong>: Sudden wilting and death of plants, often after flowering.</li>
+                            <li><strong>Phytophthora Root Rot</strong>: Brown lesions on roots leading to rotting and plant decline.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Effective strategies include:
+                        <ul>
+                            <li>Planting resistant soybean varieties.</li>
+                            <li>Using seed treatments to protect against early-season infections.</li>
+                            <li>Practicing crop rotation with non-host crops like corn or wheat.</li>
+                            <li>Applying fungicides and managing irrigation to reduce disease pressure.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Fava Beans -->
+            <div class="crop-section">
+                <img src="../static/images/pulse/fava.jpg" alt="Fava Beans">
+                <div class="crop-details">
+                    <h2>Fava Beans</h2>
+                    <p>
+                        Fava beans can be affected by diseases such as:
+                        <ul>
+                            <li><strong>Chocolate Spot</strong>: Brown spots with white centers on leaves and pods.</li>
+                            <li><strong>Rust</strong>: Orange pustules on leaves and stems.</li>
+                            <li><strong>Ascochyta Blight</strong>: Small, circular lesions with gray centers on leaves and stems.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Strategies to manage these diseases include:
+                        <ul>
+                            <li>Choosing disease-resistant fava bean varieties.</li>
+                            <li>Practicing crop rotation with non-legume crops.</li>
+                            <li>Applying fungicides preventively during wet periods.</li>
+                            <li>Monitoring and removing infected plant debris.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Add more sections for other pulse crops as needed -->
+
+        </div>
+    </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

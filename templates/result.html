@@ -1,0 +1,127 @@
+<!-- templates/result.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf Disease Detection Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+        .container h1 {
+            margin-bottom: 20px;
+            color: #333333;
+            font-size: 24px;
+        }
+        .container p {
+            margin-bottom: 20px;
+            color: #666666;
+            font-size: 16px;
+            text-align: left;
+        }
+        .container a {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .container a:hover {
+            background-color: #0056b3;
+        }
+        .result-image {
+            width: 80%;
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+            border: 2px solid #dddddd;
+            border-radius: 5px;
+        }
+        #loading p {
+            color: #007bff;
+            font-size: 18px;
+        }
+        .decease-info {
+            margin-top: 30px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Leaf Disease Detection Result</h1>
+        <div id="loading">
+            <p>Loading...</p>
+        </div>
+        <div id="result" style="display: none;">
+            <img class="result-image" id="result-image" src="{{ url_for('static', filename=result_image) }}" alt="Uploaded Image">
+            <p>{{ result }}</p>
+            
+            {% if 'powdery' in result|lower %}
+            <div class="decease-info">
+                <h2>Powdery Mildew</h2>
+                <p>
+                    Powdery mildew is a fungal disease that affects a wide range of plants,
+                    including roses, cucumbers, and grapes. It appears as white powdery spots
+                    on the upper surfaces of leaves. To control powdery mildew, it's recommended
+                    to improve air circulation around plants, prune affected parts, and use
+                    fungicidal sprays if necessary.
+                </p>
+            </div>
+            {% elif 'rust' in result|lower %}
+            <div class="decease-info">
+                <h2>Rust Disease</h2>
+                <p>
+                    Rust is a fungal disease characterized by orange or rusty-colored powdery
+                    pustules on leaves and stems. It commonly affects plants like beans, roses,
+                    and wheat. To manage rust, remove infected plant parts, practice crop rotation,
+                    and use fungicides as a preventive measure.
+                </p>
+            </div>
+            {% elif 'healthy' in result|lower %}
+            <div class="decease-info">
+                <h2>Healthy Leaf</h2>
+                <p>
+                    Your leaf appears healthy without any signs of disease. Ensure proper care,
+                    watering, and nutrition to maintain its health.
+                </p>
+            </div>
+            {% endif %}
+            <a href="/">Go Back</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('result-image').addEventListener('load', function() {
+            document.getElementById('loading').style.display = 'block';
+            setTimeout(function() {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('result').style.display = 'block';
+            }, 6000); // Adjust the delay time as needed (1000 ms = 1 second)
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Leaf Disease Detection</title>
+    <!--Swiper files in your project, you may use it from CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style1.css') }}">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="/home">home</a>
+        </nav>
+        <a href="#" class="logo"><i class="fas fa-seedling"></i> Plant Health Directory</a>
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+        </div>
+        <form action="#categories" class="search-form">
+            <input type="search" id="search-box" placeholder="search hear.....">
+            <label for="search-box" class="fas fa-search"></label>
+
+        </form>
+        
+        
+    </header>
+
+        <div class="container">
+            <h1>Cereal Crops and Diseases</h1>
+            
+            <div class="crop-matrix">
+                <!-- First row of crops -->
+                <div class="crop-section">
+                    <img src="../static/images/cereal/wheat.jpg" alt="Wheat">
+                    <div class="crop-details">
+                        <h2>Wheat</h2>
+                        <p>
+                            Wheat is susceptible to several diseases including:
+                            <ul>
+                                <li><strong>Rust</strong>: A fungal disease causing orange or red pustules on leaves and stems.</li>
+                                <li><strong>Septoria Leaf Blotch</strong>: Characterized by gray or brownish spots with dark borders on leaves.</li>
+                                <li><strong>Stripe Rust</strong>: Yellowish stripes on leaves that eventually turn rust-colored.</li>
+                            </ul>
+                        </p>
+                        <p class="control">
+                            <strong>Control Measures:</strong><br>
+                            To control these diseases, consider:
+                            <ul>
+                                <li>Using resistant varieties of wheat.</li>
+                                <li>Applying fungicides according to recommended schedules.</li>
+                                <li>Practicing crop rotation to reduce disease pressure.</li>
+                                <li>Ensuring proper plant spacing and ventilation.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="crop-section">
+                    <img src="../static/images/cereal/rice.jpg" alt="Rice">
+                    <div class="crop-details">
+                        <h2>Rice</h2>
+                        <p>
+                            Rice commonly faces the following diseases:
+                            <ul>
+                                <li><strong>Blast</strong>: A fungal disease causing lesions and blast-like symptoms on leaves, panicles, and stems.</li>
+                                <li><strong>Bacterial Leaf Blight</strong>: Water-soaked lesions on leaves, caused by bacteria.</li>
+                                <li><strong>Smut</strong>: Characterized by black, powdery spores on the panicles.</li>
+                            </ul>
+                        </p>
+                        <p class="control">
+                            <strong>Control Measures:</strong><br>
+                            Effective control methods include:
+                            <ul>
+                                <li>Using disease-resistant rice varieties.</li>
+                                <li>Practicing good water management to minimize disease spread.</li>
+                                <li>Applying fungicides early in the season as a preventive measure.</li>
+                                <li>Removing and destroying infected plant debris promptly.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Second row of crops -->
+                <div class="crop-section">
+                    <img src="../static/images/cereal/corn.jpg" alt="Corn">
+                    <div class="crop-details">
+                        <h2>Corn</h2>
+                        <p>
+                            Corn is vulnerable to various diseases, such as:
+                            <ul>
+                                <li><strong>Corn Smut</strong>: A fungal disease causing swollen, gray-black galls on ears and stalks.</li>
+                                <li><strong>Gray Leaf Spot</strong>: Characterized by rectangular, gray lesions on leaves.</li>
+                                <li><strong>Common Rust</strong>: Small, reddish-brown pustules on leaves and husks.</li>
+                            </ul>
+                        </p>
+                        <p class="control">
+                            <strong>Control Measures:</strong><br>
+                            Recommended control strategies include:
+                            <ul>
+                                <li>Planting disease-resistant corn hybrids.</li>
+                                <li>Practicing crop rotation with non-host crops.</li>
+                                <li>Applying fungicides during critical growth stages.</li>
+                                <li>Monitoring and removing infected plants promptly.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="crop-section">
+                    <img src="../static/images/cereal/barley.jpg" alt="Barley">
+                    <div class="crop-details">
+                        <h2>Barley</h2>
+                        <p>
+                            Barley can suffer from diseases such as:
+                            <ul>
+                                <li><strong>Powdery Mildew</strong>: White, powdery fungal growth on leaves.</li>
+                                <li><strong>Net Blotch</strong>: Dark brown, irregular lesions on leaves.</li>
+                                <li><strong>Loose Smut</strong>: Internal fungal infection causing loose, black powdery spores in place of grain.</li>
+                            </ul>
+                        </p>
+                        <p class="control">
+                            <strong>Control Measures:</strong><br>
+                            Effective management practices include:
+                            <ul>
+                                <li>Using resistant barley varieties.</li>
+                                <li>Applying fungicides at early stages of disease development.</li>
+                                <li>Implementing crop rotation to break disease cycles.</li>
+                                <li>Practicing good field sanitation.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                            <!-- Oats -->
+            <div class="crop-section">
+                <img src="../static/images/cereal/oats.jpg" alt="Oats">
+                <div class="crop-details">
+                    <h2>Oats</h2>
+                    <p>
+                        Oats are susceptible to diseases such as:
+                        <ul>
+                            <li><strong>Crown Rust</strong>: Orange to yellow-orange pustules on leaves, stems, and panicles.</li>
+                            <li><strong>Septoria Leaf Blotch</strong>: Small, dark spots with a yellow halo on leaves.</li>
+                            <li><strong>Smuts</strong>: Black, powdery spores on panicles.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Strategies to manage these diseases include:
+                        <ul>
+                            <li>Planting resistant oat varieties.</li>
+                            <li>Applying fungicides as needed, especially during wet weather.</li>
+                            <li>Practicing crop rotation and proper field hygiene.</li>
+                            <li>Monitoring oat fields regularly for early detection and management.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+              <!-- Sorghum -->
+              <div class="crop-section">
+                <img src="../static/images/cereal/sorghum.jpg" alt="Sorghum">
+                <div class="crop-details">
+                    <h2>Sorghum</h2>
+                    <p>
+                        Sorghum is prone to diseases like:
+                        <ul>
+                            <li><strong>Anthracnose</strong>: Dark, sunken lesions on stems, leaves, and panicles.</li>
+                            <li><strong>Downy Mildew</strong>: Grayish-white fungal growth on the undersides of leaves.</li>
+                            <li><strong>Head Smut</strong>: Malformed, blackened heads with spore masses.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Effective strategies include:
+                        <ul>
+                            <li>Planting disease-resistant sorghum varieties.</li>
+                            <li>Practicing crop rotation to break disease cycles.</li>
+                            <li>Applying fungicides preventively during critical growth stages.</li>
+                            <li>Monitoring and removing infected plant debris.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+                
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiber Crops and Diseases</title>
+    <!-- Swiper files in your project, you may use it from CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style1.css') }}">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="/home">home</a>
+        </nav>
+        <a href="#" class="logo"><i class="fas fa-seedling"></i> Plant Health Directory</a>
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+        </div>
+        <form action="#categories" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <div class="container">
+        <h1>Fiber Crops and Diseases</h1>
+        
+        <div class="crop-matrix">
+            <!-- Cotton -->
+            <div class="crop-section">
+                <img src="../static/images/fiber/cotton.jpg" alt="Cotton">
+                <div class="crop-details">
+                    <h2>Cotton</h2>
+                    <p>
+                        Cotton is vulnerable to diseases such as:
+                        <ul>
+                            <li><strong>Verticillium Wilt</strong>: Wilting and yellowing of leaves due to fungal infection.</li>
+                            <li><strong>Cotton Boll Rot</strong>: Rotting of cotton bolls caused by fungi.</li>
+                            <li><strong>Anthracnose</strong>: Dark, sunken lesions on stems, leaves, and bolls.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Effective management includes:
+                        <ul>
+                            <li>Planting disease-resistant cotton varieties.</li>
+                            <li>Practicing crop rotation with non-host crops.</li>
+                            <li>Applying fungicides during critical growth stages.</li>
+                            <li>Monitoring and managing irrigation to reduce disease spread.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Flax -->
+            <div class="crop-section">
+                <img src="../static/images/fiber/flax.jpg" alt="Flax">
+                <div class="crop-details">
+                    <h2>Flax</h2>
+                    <p>
+                        Flax can suffer from diseases like:
+                        <ul>
+                            <li><strong>Powdery Mildew</strong>: White, powdery fungal growth on leaves.</li>
+                            <li><strong>Rust</strong>: Orange to yellowish pustules on leaves and stems.</li>
+                            <li><strong>Flax Wilt</strong>: Wilting and yellowing of leaves due to fungal infection.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Strategies for disease control include:
+                        <ul>
+                            <li>Using disease-resistant flax varieties.</li>
+                            <li>Practicing crop rotation to break disease cycles.</li>
+                            <li>Applying fungicides preventively in humid conditions.</li>
+                            <li>Monitoring and removing infected plant debris.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Hemp -->
+            <div class="crop-section">
+                <img src="../static/images/fiber/hemp.jpg" alt="Hemp">
+                <div class="crop-details">
+                    <h2>Hemp</h2>
+                    <p>
+                        Hemp is prone to diseases such as:
+                        <ul>
+                            <li><strong>Gray Mold</strong>: Grayish mold on leaves, stems, and buds.</li>
+                            <li><strong>Root Rot</strong>: Rotting of roots due to fungal infections.</li>
+                            <li><strong>Leaf Spot</strong>: Circular spots with gray centers on leaves.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Effective strategies include:
+                        <ul>
+                            <li>Planting disease-resistant hemp varieties.</li>
+                            <li>Practicing crop rotation with non-host crops.</li>
+                            <li>Applying fungicides during flowering and early growth stages.</li>
+                            <li>Improving air circulation and soil drainage.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Jute -->
+            <div class="crop-section">
+                <img src="../static/images/fiber/jute.jpg" alt="Jute">
+                <div class="crop-details">
+                    <h2>Jute</h2>
+                    <p>
+                        Jute can be affected by diseases such as:
+                        <ul>
+                            <li><strong>Rust</strong>: Reddish-brown pustules on leaves and stems.</li>
+                            <li><strong>Root Rot</strong>: Rotting of roots caused by fungal pathogens.</li>
+                            <li><strong>Leaf Spot</strong>: Circular lesions with brown centers on leaves.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Strategies for disease management include:
+                        <ul>
+                            <li>Using disease-resistant jute varieties.</li>
+                            <li>Practicing crop rotation with non-host crops.</li>
+                            <li>Applying fungicides preventively during humid weather conditions.</li>
+                            <li>Ensuring well-drained soil and avoiding waterlogging.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Kenaf -->
+            <div class="crop-section">
+                <img src="../static/images/fiber/kenaf.jpg" alt="Kenaf">
+                <div class="crop-details">
+                    <h2>Kenaf</h2>
+                    <p>
+                        Kenaf is susceptible to diseases such as:
+                        <ul>
+                            <li><strong>Anthracnose</strong>: Dark, sunken lesions on stems and leaves.</li>
+                            <li><strong>Leaf Spot</strong>: Circular spots with gray centers on leaves.</li>
+                            <li><strong>Stem Rot</strong>: Rotting of stems due to fungal infections.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Effective control strategies include:
+                        <ul>
+                            <li>Planting disease-resistant kenaf varieties.</li>
+                            <li>Practicing crop rotation with non-host crops.</li>
+                            <li>Applying fungicides preventively during wet weather conditions.</li>
+                            <li>Monitoring and removing infected plant debris promptly.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ramie -->
+            <div class="crop-section">
+                <img src="../static/images/fiber/ramie.jpg" alt="Ramie">
+                <div class="crop-details">
+                    <h2>Ramie</h2>
+                    <p>
+                        Ramie can suffer from diseases such as:
+                        <ul>
+                            <li><strong>Leaf Spot</strong>: Small, dark spots with a yellow halo on leaves.</li>
+                            <li><strong>Root Rot</strong>: Rotting of roots due to fungal pathogens.</li>
+                            <li><strong>Powdery Mildew</strong>: White, powdery growth on leaves.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Strategies to manage these diseases include:
+                        <ul>
+                            <li>Using disease-resistant ramie varieties.</li>
+                            <li>Practicing crop rotation with non-host crops.</li>
+                            <li>Applying fungicides preventively during humid conditions.</li>
+                            <li>Monitoring and improving air circulation around plants.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Add more sections for other fiber crops as needed -->
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

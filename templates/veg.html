@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable Crops and Diseases</title>
+    <!-- Swiper files in your project, you may use it from CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style1.css') }}">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="/home">home</a>
+        </nav>
+        <a href="#" class="logo"><i class="fas fa-seedling"></i> Plant Health Directory</a>
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+        </div>
+        <form action="#categories" class="search-form">
+            <input type="search" id="search-box" placeholder="search here.....">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <div class="container">
+        <h1>Vegetable Crops and Diseases</h1>
+        
+        <div class="crop-matrix">
+            <!-- Tomato -->
+            <div class="crop-section">
+                <img src="../static/images/vegetable/tomato.jpg" alt="Tomato">
+                <div class="crop-details">
+                    <h2>Tomato</h2>
+                    <p>
+                        Tomatoes are susceptible to diseases such as:
+                        <ul>
+                            <li><strong>Early Blight</strong>: Brown spots with concentric rings on leaves.</li>
+                            <li><strong>Septoria Leaf Spot</strong>: Small, dark spots with a white center on leaves.</li>
+                            <li><strong>Tomato Yellow Leaf Curl Virus</strong>: Leaf yellowing and curling.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Effective control methods include:
+                        <ul>
+                            <li>Planting disease-resistant tomato varieties.</li>
+                            <li>Practicing crop rotation with non-solanaceous plants.</li>
+                            <li>Using mulch to reduce soil splash and spread of pathogens.</li>
+                            <li>Applying fungicides and insecticides as preventive measures.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Potato -->
+            <div class="crop-section">
+                <img src="../static/images/vegetable/potato.jpg" alt="Potato">
+                <div class="crop-details">
+                    <h2>Potato</h2>
+                    <p>
+                        Potatoes can suffer from diseases like:
+                        <ul>
+                            <li><strong>Late Blight</strong>: Dark lesions with a water-soaked appearance on leaves.</li>
+                            <li><strong>Early Blight</strong>: Dark, concentric rings on leaves.</li>
+                            <li><strong>Potato Scab</strong>: Rough, corky patches on tubers.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Strategies to manage these diseases include:
+                        <ul>
+                            <li>Choosing certified disease-free seed potatoes.</li>
+                            <li>Practicing crop rotation with non-solanaceous crops.</li>
+                            <li>Applying fungicides and adjusting irrigation practices.</li>
+                            <li>Monitoring crops regularly for early signs of disease.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Carrot -->
+            <div class="crop-section">
+                <img src="../static/images/vegetable/carrot.jpg" alt="Carrot">
+                <div class="crop-details">
+                    <h2>Carrot</h2>
+                    <p>
+                        Carrots are vulnerable to diseases such as:
+                        <ul>
+                            <li><strong>Alternaria Leaf Blight</strong>: Brown to black spots on leaves.</li>
+                            <li><strong>Root Knot Nematodes</strong>: Swollen, knotted roots.</li>
+                            <li><strong>Cavity Spot</strong>: Sunken lesions on carrot roots.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Effective management practices include:
+                        <ul>
+                            <li>Planting disease-resistant carrot varieties.</li>
+                            <li>Improving soil drainage and fertility.</li>
+                            <li>Practicing crop rotation with non-carrot crops.</li>
+                            <li>Using clean, disease-free seeds and seedlings.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bell Pepper -->
+            <div class="crop-section">
+                <img src="../static/images/vegetable/Bell Pepper.jpg" alt="Bell Pepper">
+                <div class="crop-details">
+                    <h2>Bell Pepper</h2>
+                    <p>
+                        Bell peppers can suffer from diseases like:
+                        <ul>
+                            <li><strong>Anthracnose</strong>: Dark, sunken lesions on fruits.</li>
+                            <li><strong>Bacterial Leaf Spot</strong>: Water-soaked lesions on leaves.</li>
+                            <li><strong>Powdery Mildew</strong>: White, powdery growth on leaves.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Strategies to manage these diseases include:
+                        <ul>
+                            <li>Choosing disease-resistant bell pepper varieties.</li>
+                            <li>Practicing crop rotation with non-solanaceous crops.</li>
+                            <li>Applying fungicides and adjusting irrigation practices.</li>
+                            <li>Removing and destroying infected plant debris.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Cucumber -->
+            <div class="crop-section">
+                <img src="../static/images/vegetable/cucumber.jpg" alt="Cucumber">
+                <div class="crop-details">
+                    <h2>Cucumber</h2>
+                    <p>
+                        Cucumbers are prone to diseases such as:
+                        <ul>
+                            <li><strong>Downy Mildew</strong>: Grayish-white fungal growth on leaves.</li>
+                            <li><strong>Powdery Mildew</strong>: White, powdery growth on leaves and stems.</li>
+                            <li><strong>Anthracnose</strong>: Dark, sunken lesions on fruits.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Effective strategies include:
+                        <ul>
+                            <li>Choosing disease-resistant cucumber varieties.</li>
+                            <li>Practicing crop rotation with non-cucumber crops.</li>
+                            <li>Applying fungicides and managing irrigation.</li>
+                            <li>Removing and destroying infected plant debris promptly.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Spinach -->
+            <div class="crop-section">
+                <img src="../static/images/vegetable/spinach.jpg" alt="Spinach">
+                <div class="crop-details">
+                    <h2>Spinach</h2>
+                    <p>
+                        Spinach can be affected by diseases such as:
+                        <ul>
+                            <li><strong>Downy Mildew</strong>: Grayish-white fungal growth on leaves.</li>
+                            <li><strong>Leaf Spot</strong>: Small, dark spots on leaves.</li>
+                            <li><strong>Powdery Mildew</strong>: White, powdery growth on leaves.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Strategies to manage these diseases include:
+                        <ul>
+                            <li>Planting disease-resistant spinach varieties.</li>
+                            <li>Practicing crop rotation with non-solanaceous crops.</li>
+                            <li>Applying fungicides and improving air circulation.</li>
+                            <li>Monitoring and removing infected plant material.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Add more sections for other vegetable crops as needed -->
+
+        </div>
+    </div>
+                
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

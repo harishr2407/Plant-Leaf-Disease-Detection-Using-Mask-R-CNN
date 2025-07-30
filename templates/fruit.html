@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Crops and Diseases</title>
+    <!--Swiper files in your project, you may use it from CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style1.css') }}">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="/home">home</a>
+        </nav>
+        <a href="#" class="logo"><i class="fas fa-seedling"></i> Plant Health Directory</a>
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+        </div>
+        <form action="#categories" class="search-form">
+            <input type="search" id="search-box" placeholder="Search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <div class="container">
+        <h1>Fruit Crops and Diseases</h1>
+        
+        <div class="crop-matrix">
+            <!-- First row of crops -->
+            <div class="crop-section">
+                <img src="../static/images/fruits/apple.jpg" alt="Apple">
+                <div class="crop-details">
+                    <h2>Apple</h2>
+                    <p>
+                        Apples can be affected by diseases such as:
+                        <ul>
+                            <li><strong>Apple Scab</strong>: Fungal disease causing dark lesions on leaves and fruit.</li>
+                            <li><strong>Fire Blight</strong>: Bacterial disease causing blackened twigs and cankers.</li>
+                            <li><strong>Cedar Apple Rust</strong>: Fungal disease with orange spots on leaves and fruit.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Strategies to manage these diseases include:
+                        <ul>
+                            <li>Planting disease-resistant apple varieties.</li>
+                            <li>Applying fungicides during critical periods of growth.</li>
+                            <li>Pruning to improve air circulation.</li>
+                            <li>Removing and destroying infected plant parts.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="crop-section">
+                <img src="../static/images/fruits/orange.jpg" alt="Orange">
+                <div class="crop-details">
+                    <h2>Orange</h2>
+                    <p>
+                        Oranges are susceptible to diseases like:
+                        <ul>
+                            <li><strong>Citrus Canker</strong>: Bacterial disease causing lesions on leaves and fruit.</li>
+                            <li><strong>Greasy Spot</strong>: Fungal disease with oily spots on leaves.</li>
+                            <li><strong>Anthracnose</strong>: Fungal disease causing dark lesions on fruit and leaves.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Effective management practices include:
+                        <ul>
+                            <li>Using disease-resistant orange varieties.</li>
+                            <li>Practicing good orchard sanitation.</li>
+                            <li>Applying copper-based fungicides preventively.</li>
+                            <li>Removing and destroying infected plant debris.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Second row of crops -->
+            <div class="crop-section">
+                <img src="../static/images/fruits/banana.jpg" alt="Banana">
+                <div class="crop-details">
+                    <h2>Banana</h2>
+                    <p>
+                        Bananas can suffer from diseases such as:
+                        <ul>
+                            <li><strong>Panama Disease</strong>: Soil-borne fungal disease causing wilting and death.</li>
+                            <li><strong>Black Sigatoka</strong>: Fungal disease with black streaks on leaves.</li>
+                            <li><strong>Anthracnose</strong>: Fungal disease causing sunken lesions on fruit.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Strategies to manage these diseases include:
+                        <ul>
+                            <li>Planting disease-resistant banana cultivars.</li>
+                            <li>Practicing crop rotation with non-host crops.</li>
+                            <li>Applying fungicides during rainy seasons.</li>
+                            <li>Using clean planting material.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="crop-section">
+                <img src="../static/images/fruits/grape.jpg" alt="Grape">
+                <div class="crop-details">
+                    <h2>Grape</h2>
+                    <p>
+                        Grapes are vulnerable to diseases such as:
+                        <ul>
+                            <li><strong>Powdery Mildew</strong>: Fungal disease causing white powdery growth on leaves and fruit.</li>
+                            <li><strong>Downy Mildew</strong>: Fungal disease with grayish-brown fuzz on undersides of leaves.</li>
+                            <li><strong>Black Rot</strong>: Fungal disease causing black spots on leaves and fruit.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Effective management practices include:
+                        <ul>
+                            <li>Choosing disease-resistant grape varieties.</li>
+                            <li>Practicing good canopy management.</li>
+                            <li>Applying fungicides preventively.</li>
+                            <li>Removing and destroying infected plant parts.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Third row of crops -->
+            <div class="crop-section">
+                <img src="../static/images/fruits/strawberry.jpg" alt="Strawberry">
+                <div class="crop-details">
+                    <h2>Strawberry</h2>
+                    <p>
+                        Strawberries can be affected by diseases like:
+                        <ul>
+                            <li><strong>Gray Mold</strong>: Fungal disease causing fuzzy gray mold on fruit and leaves.</li>
+                            <li><strong>Anthracnose</strong>: Fungal disease with dark lesions on leaves and fruit.</li>
+                            <li><strong>Verticillium Wilt</strong>: Fungal disease causing wilting and death of plants.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Strategies to manage these diseases include:
+                        <ul>
+                            <li>Planting disease-resistant strawberry varieties.</li>
+                            <li>Practicing crop rotation with non-host crops.</li>
+                            <li>Applying fungicides preventively during flowering.</li>
+                            <li>Improving air circulation in the field.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="crop-section">
+                <img src="../static/images/fruits/peach.jpg" alt="Peach">
+                <div class="crop-details">
+                    <h2>Peach</h2>
+                    <p>
+                        Peaches are susceptible to diseases such as:
+                        <ul>
+                            <li><strong>Peach Leaf Curl</strong>: Fungal disease causing distorted leaves and red blisters.</li>
+                            <li><strong>Brown Rot</strong>: Fungal disease causing brown, mummified fruit and blossom blight.</li>
+                            <li><strong>Scab</strong>: Fungal disease with dark lesions on leaves and fruit.</li>
+                        </ul>
+                    </p>
+                    <p class="control">
+                        <strong>Control Measures:</strong><br>
+                        Effective management practices include:
+                        <ul>
+                            <li>Using disease-resistant peach varieties.</li>
+                            <li>Applying fungicides during critical growth stages.</li>
+                            <li>Pruning to improve air circulation.</li>
+                            <li>Removing and destroying infected plant parts.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
